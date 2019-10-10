@@ -1,7 +1,7 @@
 jobs:
   build1:
     docker:
-      - image: rocker/rstudio:latest
+      - image: cyversevice/rstudio-snapatac:1.0
     steps:
       - checkout
       - run: rstudio --version
