@@ -1,0 +1,11 @@
+jobs:
+  build1:
+    docker:
+      - image: rocker/rstudio:latest
+    steps:
+      - checkout
+      - run: rstudio --version
+workflows:
+  version: 1.0
+    jobs:
+      - build1
